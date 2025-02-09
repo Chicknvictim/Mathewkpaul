@@ -1,0 +1,112 @@
+/** @format */
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ultra&display=swap');
+@import url('https://fonts.cdnfonts.com/css/kapakana');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&family=Ultra&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Inter";
+  text-transform: uppercase;
+  background-color: rgb(90,20,35);
+  color: black;
+  cursor: none;
+}  .cursor {
+  position: fixed;
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+.cursor__inner {
+  fill: none;
+  stroke: #9c9388 ;
+  filter: url(#filter-1);
+}
+
+
+.upper-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: lighter;
+  display: flex;
+}
+
+.upper-container span,
+.upper-container h1 {
+  padding: 10px 50px;
+  color: #000;
+}
+
+.upper-container span {
+  font-size: 90px;
+  font-weight: 500;
+  font-family: "Bebas Neue";
+}
+
+.upper-container h1 {
+  font-size: 70px;
+  line-height: 1;
+  font-family:  "Bebas Neue";
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.imageBoard {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.imageBoard .cardImage {
+  opacity: 0;
+  height: 50vh;
+}
+.cardImage {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(127 10 43);
+  font-weight: bold;
+  font-size: 20px;
+  flex-direction: column;
+}.lower-container {
+  color: #9c9388;
+}
+.suggestion{
+  position: absolute;
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
+}
+
+h1{
+  font-size: 80px;
+  color: #fff;
+}
+@media(max-width: 1000px){
+  h1{
+      font-size: 50px;
+  }
+}.cardImage a {
+  text-decoration: none;
+  font-family: tangerine;
+  text-transform: capitalize;
+  color: #9c9388;
+}
