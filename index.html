@@ -22,6 +22,13 @@
 <title>Mathew k paul</title>
 <link rel="stylesheet" href="mousepointer.css">
 <body>
+    <div id="disclaimer-popup" class="popup">
+        <div class="popup-content">
+            <h2>Disclaimer</h2>
+            <p>Adjust zoom with Ctrl + / Ctrl - (⌘ + / ⌘ - on Mac) for the best view. For suggestions or inquiries, feel free to DM on Instagram.</p>
+            <button id="accept-btn">Accept & Continue</button>
+        </div>
+    </div>
     <header>
         <nav class="navbar">
             <a href="index.html" style="font-size: 1.5rem; font-weight: 600;">Chicknvictim</a>
@@ -149,4 +156,20 @@
     </footer>
 </body>
 <script src="mousepointer.js"></script><!-- mouse pointer section-->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.getElementById("disclaimer-popup");
+    const acceptBtn = document.getElementById("accept-btn");
+
+    if (!localStorage.getItem("disclaimerAccepted")) {
+        popup.style.display = "flex";
+    }
+
+    acceptBtn.addEventListener("click", function () {
+        localStorage.setItem("disclaimerAccepted", "true");
+        popup.style.display = "none";
+    });
+});
+
+</script>
 </html>
